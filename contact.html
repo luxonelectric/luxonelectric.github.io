@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Luxon Electric</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html" aria-label="Luxon Electric home"><img src="assets/images/luxon-logo.png" alt="Luxon Electric"></a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span></button>
+      <nav class="site-nav" aria-label="Main menu">
+        <a href="index.html">Home</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="about.html">About</a><a class="active" href="contact.html">Contact</a><a class="button" href="contact.html">Request a Quote</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Request <span>a Quote</span></h1>
+        <p>Tell us about your electrical project and we’ll get back to you as soon as possible.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container split">
+        <div>
+          <h2 class="section-heading left">Contact</h2>
+          <div class="contact-details">
+            <p><strong>Phone</strong><a href="tel:4155551234">(650) 285-0138</a></p>
+          <p><strong>Email</strong><a href="mailto:luxonelectric.ca@gmail.com">luxonelectric.ca@gmail.com</a></p>
+          <p><strong>Hours</strong>Mon - Fri: 9am - 9pm</p>
+        </div>
+        </div>
+        <div class="quote-panel">
+          <h2 class="section-heading left">Request a Quote</h2>
+          <p>Fill out the form below and we’ll get back to you as soon as possible.</p>
+          <form class="form-grid" action="https://formsubmit.co/luxonelectric.ca@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New Luxon Electric quote request">
+            <input type="hidden" name="_captcha" value="false">
+            <input aria-label="Name" name="name" placeholder="Name *" required>
+            <input aria-label="Phone" name="phone" placeholder="Phone *" required>
+            <input aria-label="Email" name="email" type="email" placeholder="Email *" required>
+            <input aria-label="Zip Code" name="zip-code" placeholder="Zip Code *" required>
+            <select aria-label="Commercial or Residential" name="property-type" required><option value="">Commercial or Residential *</option><option>Residential</option><option>Commercial</option></select>
+            <select aria-label="Project Type" name="project-type" required><option value="">Project Type *</option><option>Panel Upgrade</option><option>EV Charger Installation</option><option>Lighting</option><option>Troubleshooting or Repair</option><option>Re-wiring</option><option>Other</option></select>
+            <textarea aria-label="Project details" name="message" placeholder="Tell us about your project *" required></textarea>
+            <button class="button full" type="submit">Send Message</button>
+          </form>
+          <p class="form-note">Your information is never shared. We respect your privacy.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><img class="footer-logo" src="assets/images/luxon-logo.png" alt="Luxon Electric"><p>Reliable electrical solutions for homes and businesses across the Bay Area.</p><div class="socials"><a href="#" aria-label="Google Business">G</a><a href="#" aria-label="Yelp">Yelp</a></div></div>
+      <div><h2 class="footer-title">Contact</h2><p>(650) 485-1663</p><p>luxonelectric.ca@gmail.com</p><p>San Francisco, CA</p><p>Mon - Fri: 9am - 9pm</p></div>
+      <div><h2 class="footer-title">Service Area</h2><p>Proudly serving Bay Area homes and businesses.</p></div>
+    </div>
+    <div class="copyright">© 2024 Luxon Electric. All rights reserved.</div>
+  </footer>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
