@@ -29,9 +29,12 @@
           <h2 class="section-heading left">Contact</h2>
           <div class="contact-details">
             <p><strong>Phone</strong><a href="tel:6502850138">(650) 285-0138</a></p>
-          <p><strong>Email</strong><a href="mailto:luxonelectric.ca@gmail.com">luxonelectric.ca@gmail.com</a></p>
-          <p><strong>Hours</strong>Mon - Fri: 9am - 9pm</p>
-        </div>
+            <p><strong>Email</strong><a href="mailto:luxonelectric.ca@gmail.com">luxonelectric.ca@gmail.com</a></p>
+            <p><strong>Hours</strong>Mon - Fri: 9am - 9pm</p>
+          </div>
+          <div class="contact-actions">
+            <a id="save-contact" class="button" href="#">Save Contact</a>
+          </div>
         </div>
         <div class="quote-panel">
           <h2 class="section-heading left">Request a Quote</h2>
@@ -62,5 +65,23 @@
     <div class="copyright">© 2026 Luxon Electric. All rights reserved.</div>
   </footer>
   <script src="assets/js/site.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const saveLink = document.getElementById('save-contact');
+      if (!saveLink) return;
+
+      const vCard = [
+        'BEGIN:VCARD',
+        'VERSION:3.0',
+        'FN:Luxon Electric LLC (Jacky)',
+        'ORG:Luxon Electric LLC',
+        'TEL;TYPE=CELL:+16502850138',
+        'END:VCARD'
+      ].join('\n');
+
+      saveLink.href = 'data:text/vcard;charset=utf-8,' + encodeURIComponent(vCard);
+      saveLink.download = 'luxon-electric.vcf';
+    });
+  </script>
 </body>
 </html>

@@ -606,6 +606,10 @@ textarea {
   color: var(--blue);
 }
 
+.contact-actions {
+  margin-top: 16px;
+}
+
 .quote-home,
 .service-area-layout {
   display: grid;
@@ -743,6 +747,14 @@ textarea {
   text-transform: uppercase;
 }
 
+.featured-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
 .featured-caption {
   padding: 22px;
 }
@@ -760,7 +772,7 @@ textarea {
 .featured-location {
   color: var(--gold);
   font-size: 0.82rem;
-  font-weight: 800;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
