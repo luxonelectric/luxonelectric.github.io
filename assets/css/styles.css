@@ -519,22 +519,28 @@ textarea {
 .footer-contact-link {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
+  min-height: 44px;
   margin-top: 10px;
-  padding: 10px 14px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.08);
-  color: var(--white);
-  font-size: 0.95rem;
-  font-weight: 600;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 5px;
+  background: var(--yellow);
+  color: #071529;
+  font-family: var(--button-font);
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
   text-decoration: none;
-  transition: background 180ms ease, transform 180ms ease;
+  text-transform: uppercase;
+  box-shadow: 0 4px 0 var(--gold);
+  transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
 .footer-contact-link:hover,
 .footer-contact-link:focus-visible {
-  background: rgba(255, 255, 255, 0.16);
   transform: translateY(-1px);
+  box-shadow: 0 5px 0 var(--gold);
 }
 
 .copyright {
@@ -622,8 +628,12 @@ textarea {
 .cta-strip {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 24px;
+  justify-content: flex-start;
+  gap: 18px;
+}
+
+.cta-strip .button {
+  font-weight: 700;
 }
 
 .cta-strip h2 {
