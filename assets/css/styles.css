@@ -381,14 +381,31 @@ main {
 
 .owner-block {
   display: grid;
-  grid-template-columns: 184px 1fr;
+  grid-template-columns: 184px minmax(0, 1fr);
   gap: 30px;
   align-items: start;
+  padding: 0 0 28px;
+}
+
+.owner-block + .owner-block {
+  margin-top: 12px;
+  padding-top: 34px;
+  border-top: 1px solid var(--line);
 }
 
 .owner-block img {
   border-radius: 5px;
   box-shadow: var(--shadow);
+}
+
+.owner-name {
+  margin: 0 0 8px;
+  color: var(--blue);
+  font-family: var(--heading-font);
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
 }
 
 .mini-list {
@@ -497,6 +514,27 @@ textarea {
   font-family: var(--heading-font);
   font-size: 0.75rem;
   font-weight: 700;
+}
+
+.footer-contact-link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--white);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 180ms ease, transform 180ms ease;
+}
+
+.footer-contact-link:hover,
+.footer-contact-link:focus-visible {
+  background: rgba(255, 255, 255, 0.16);
+  transform: translateY(-1px);
 }
 
 .copyright {
@@ -734,6 +772,8 @@ textarea {
 
 .about-owner-layout {
   max-width: 920px;
+  display: grid;
+  gap: 8px;
 }
 
 .license-note {
