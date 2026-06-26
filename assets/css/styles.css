@@ -808,6 +808,23 @@ textarea {
   gap: 24px;
 }
 
+.difference-grid .info-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  min-height: 220px;
+}
+
+.difference-grid .info-card h3 {
+  min-height: 2.8em;
+  margin-bottom: 12px;
+}
+
+.difference-grid .info-card p {
+  margin-bottom: 0;
+}
+
 .quote-panel.compact {
   padding-left: 0;
   border-left: 0;
@@ -1087,8 +1104,13 @@ textarea {
   .split,
   .owner-block,
   .form-grid,
-  .area-list {
+  .area-list,
+  .difference-grid {
     grid-template-columns: 1fr;
+  }
+
+  .difference-grid .info-card {
+    min-height: auto;
   }
 
   .testimonial-carousel {
